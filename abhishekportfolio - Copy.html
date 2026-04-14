@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhishek Dangol — UI/UX Designer</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<link rel="icon" href="fabicon.png" type="image/png">
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cur" id="cur"></div>
+<div class="cur-r" id="curR"></div>
+
+<!-- PAGE LOADER -->
+<div id="loader">
+  <div class="loader-inner">
+    <div class="loader-logo">Abhishek Dangol</div>
+    <div class="loader-line-wrap"><div class="loader-line"></div></div>
+    <div class="loader-pct">Crafting your experience</div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-brand">
+    <div class="nav-monogram"> <img src="fabicon.png" alt="" style="border-radius: 8px;"></div>
+    <span class="nav-name">Abhishek Dangol</span>
+  </div>
+  <div class="nav-links">
+    <a href="#about"      class="nav-a">About</a>
+    <a href="#work"       class="nav-a">Work</a>
+    <a href="#experience" class="nav-a">Experience</a>
+    <a href="#process"    class="nav-a">Process</a>
+    <a href="#contact"    class="nav-a">Contact</a>
+  </div>
+  <a href="#contact" class="nav-cta">
+    <i class="ph ph-paper-plane-tilt"></i>
+    Hire Me
+  </a>
+  <button class="nav-mob" onclick="document.getElementById('mob-menu').classList.add('open')">
+    <i class="ph ph-list"></i>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div id="mob-menu">
+  <button class="mm-close" onclick="document.getElementById('mob-menu').classList.remove('open')">
+    <i class="ph ph-x"></i>
+  </button>
+  <a class="mm-link" href="#about"      onclick="document.getElementById('mob-menu').classList.remove('open')">About</a>
+  <a class="mm-link" href="#work"       onclick="document.getElementById('mob-menu').classList.remove('open')">Work</a>
+  <a class="mm-link" href="#experience" onclick="document.getElementById('mob-menu').classList.remove('open')">Experience</a>
+  <a class="mm-link" href="#process"    onclick="document.getElementById('mob-menu').classList.remove('open')">Process</a>
+  <a class="mm-link" href="#contact"    onclick="document.getElementById('mob-menu').classList.remove('open')">Contact</a>
+</div>
+
+<!-- ════════════════════════════════════════
+     HERO
+════════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-badge">
+    <span class="hero-badge-dot"></span>
+    Available for new projects
+  </div>
+
+  <h1 class="hero-title">
+    <span class="line"><span class="li">Crafting Digital</span></span>
+    <span class="line"><span class="li"><em>Experiences</em></span></span>
+    <span class="line"><span class="li">That Inspire</span></span>
+  </h1>
+
+  <p class="hero-desc">
+    UI/UX Designer and Visual Creator based in Kathmandu, Nepal — transforming ideas into intuitive, beautiful digital products through research-led design.
+  </p>
+
+  <div class="hero-actions">
+    <a href="#work" class="btn-primary">
+      <i class="ph ph-squares-four"></i>
+      View My Work
+    </a>
+    <a href="#contact" class="btn-secondary">
+      <i class="ph ph-chat-circle"></i>
+      Let's Talk
+    </a>
+  </div>
+
+  <div class="hero-scroll">
+    <div class="scroll-pill"><div class="scroll-dot"></div></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <!-- duplicated for seamless loop -->
+    <div class="marquee-item">UI/UX Design<span class="marquee-sep">·</span></div>
+    <div class="marquee-item">Visual Design<span class="marquee-sep">·</span></div>
+    <div class="marquee-item">Logo &amp; Brand Identity<span class="marquee-sep">·</span></div>
+    <div class="marquee-item">Figma<span class="marquee-sep">·</span></div>
+    <div class="marquee-item">Prototyping<span class="marquee-sep">·</span></div>
+    <div class="marquee-item">Graphic Design<span class="marquee-sep">·</span></div>
+    <div class="marquee-item">Design Systems<span class="marquee-sep">·</span></div>
+    <div class="marquee-item">User Research<span class="marquee-sep">·</span></div>
+    <div class="marquee-item">Usability Testing<span class="marquee-sep">·</span></div>
+    <div class="marquee-item">UI/UX Design<span class="marquee-sep">·</span></div>
+    <div class="marquee-item">Visual Design<span class="marquee-sep">·</span></div>
+    <div class="marquee-item">Logo &amp; Brand Identity<span class="marquee-sep">·</span></div>
+    <div class="marquee-item">Figma<span class="marquee-sep">·</span></div>
+    <div class="marquee-item">Prototyping<span class="marquee-sep">·</span></div>
+    <div class="marquee-item">Graphic Design<span class="marquee-sep">·</span></div>
+    <div class="marquee-item">Design Systems<span class="marquee-sep">·</span></div>
+    <div class="marquee-item">User Research<span class="marquee-sep">·</span></div>
+    <div class="marquee-item">Usability Testing<span class="marquee-sep">·</span></div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════
+     ABOUT
+════════════════════════════════════════ -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="rv-l">
+        <div class="about-title-block">
+          <div class="section-label">About Me</div>
+          <h2 class="section-title">Designing with purpose,<br>crafting with care</h2>
+        </div>
+        <p class="about-text">
+          I'm <strong>Abhishek Dangol</strong>, a UI/UX Designer and Visual Creator based in Kirtipur, Kathmandu. With a <strong>Master of Computer Science</strong> and hands-on experience across design, data, and publishing, I bring both technical depth and visual sensibility to every project.
+        </p>
+        <p class="about-text">
+          Currently at <strong>Appsha Nepal</strong>, I design intuitive digital experiences grounded in user research and executed with precision — from wireframes through to polished, production-ready interfaces.
+        </p>
+        <div class="stat-row">
+          <div class="stat-cell">
+            <div class="stat-n">5<span>+</span></div>
+            <div class="stat-l">Years Active</div>
+          </div>
+          <div class="stat-cell">
+            <div class="stat-n">4</div>
+            <div class="stat-l">Roles Held</div>
+          </div>
+          <div class="stat-cell">
+            <div class="stat-n">MSc</div>
+            <div class="stat-l">Computer Sci.</div>
+          </div>
+        </div>
+      </div>
+      <div class="rv-r">
+        <div class="about-card">
+          <div class="about-card-label">Personal Details</div>
+          <div class="detail-list">
+            <div class="dl-item"><span class="dl-key">Location</span><span class="dl-val">Kirtipur, Kathmandu</span></div>
+            <div class="dl-item"><span class="dl-key">Date of Birth</span><span class="dl-val">13 August 1998</span></div>
+            <div class="dl-item"><span class="dl-key">Email</span><span class="dl-val">abhidangol11@gmail.com</span></div>
+            <div class="dl-item"><span class="dl-key">Phone</span><span class="dl-val">**********</span></div>
+            <div class="dl-item"><span class="dl-key">Languages</span><span class="dl-val">English, Nepali</span></div>
+            <div class="dl-item"><span class="dl-key">Availability</span><span class="dl-val" style="color:var(--warm)">Open to Work</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     SKILLS
+════════════════════════════════════════ -->
+<section id="skills">
+  <div class="container">
+    <div class="skills-intro rv">
+      <div class="section-label">Capabilities</div>
+      <h2 class="section-title">Tools &amp; Disciplines</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card rv" style="transition-delay:.05s">
+        <div class="sk-icon"><i class="ph ph-paint-brush"></i></div>
+        <div class="sk-title">UI/UX Design</div>
+        <div class="sk-tags">
+          <span class="sk-tag">Figma</span>
+          <span class="sk-tag">Prototyping</span>
+          <span class="sk-tag">Wireframing</span>
+          <span class="sk-tag">Usability Testing</span>
+        </div>
+      </div>
+      <div class="skill-card rv" style="transition-delay:.1s">
+        <div class="sk-icon"><i class="ph ph-circles-three"></i></div>
+        <div class="sk-title">Visual Design</div>
+        <div class="sk-tags">
+          <span class="sk-tag">Photoshop</span>
+          <span class="sk-tag">Illustrator</span>
+          <span class="sk-tag">InDesign</span>
+          <span class="sk-tag">Typography</span>
+        </div>
+      </div>
+      <div class="skill-card rv" style="transition-delay:.15s">
+        <div class="sk-icon"><i class="ph ph-users-three"></i></div>
+        <div class="sk-title">User Research</div>
+        <div class="sk-tags">
+          <span class="sk-tag">User Personas</span>
+          <span class="sk-tag">Competitor Analysis</span>
+          <span class="sk-tag">User Flows</span>
+          <span class="sk-tag">Accessibility</span>
+        </div>
+      </div>
+      <div class="skill-card rv" style="transition-delay:.2s">
+        <div class="sk-icon"><i class="ph ph-code"></i></div>
+        <div class="sk-title">Development</div>
+        <div class="sk-tags">
+          <span class="sk-tag">HTML</span>
+          <span class="sk-tag">CSS</span>
+          <span class="sk-tag">JavaScript</span>
+          <span class="sk-tag">Python</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     WORK
+════════════════════════════════════════ -->
+<section id="work">
+  <div class="container">
+    <div class="work-header rv">
+      <div>
+        <div class="section-label">Selected Work</div>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+      <div class="work-header-right">
+        <i class="ph ph-stack"></i>
+        09 Projects
+      </div>
+    </div>
+
+    <div class="work-featured">
+      <div class="project-card p1 tall rv" style="transition-delay:.04s">
+        <div class="pc-img"> 
+          <div class="pc-bg"><img src="202.jpg" alt="" style="object-fit:cover;"></div>
+          <!-- <div class="pc-mock">
+            <div class="pc-mock-screen">
+              <div class="pc-mock-bar"></div>
+              <div class="pc-mock-lines">
+                <div class="pc-mock-line ml-80"></div>
+                <div class="pc-mock-line ml-60"></div>
+                <div class="pc-mock-line ml-90"></div>
+                <div class="pc-mock-line ml-45"></div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+        <div class="pc-body">
+          <div class="pc-cat">UI/UX Design · Mobile</div>
+          <div class="pc-title">Appsha Nepal — Mobile App</div>
+          <div class="pc-desc">End-to-end mobile app design with intuitive user flows, custom design system, and high-fidelity prototypes.</div>
+          <div class="pc-footer">
+            <span class="pc-year">2025</span>
+            <div class="pc-arrow"><i class="ph ph-arrow-up-right"></i></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card p2 tall rv" style="transition-delay:.09s">
+        <div class="pc-img"> 
+          <div class="pc-bg"><img src="brand.webp" alt=""></div>
+          <!-- <div class="pc-mock">
+            <div class="pc-mock-screen">
+              <div class="pc-mock-bar"></div>
+              <div class="pc-mock-lines">
+                <div class="pc-mock-line ml-90"></div>
+                <div class="pc-mock-line ml-60"></div>
+                <div class="pc-mock-line ml-80"></div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+        <div class="pc-body">
+          <div class="pc-cat">Brand Identity · Logo</div>
+          <div class="pc-title">Brand Identity System</div>
+          <div class="pc-desc">Complete visual identity including logo suite, colour palette, typography, and brand guidelines.</div>
+          <div class="pc-footer">
+            <span class="pc-year">2024</span>
+            <div class="pc-arrow"><i class="ph ph-arrow-up-right"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-grid-3">
+      <div class="project-card p3 med rv" style="transition-delay:.14s">
+        <div class="pc-img"> 
+          <div class="pc-bg"><img src="./analytics.jpg" alt=""></div>
+            <!-- <div class="pc-mock">
+              <div class="pc-mock-screen">
+                <div class="pc-mock-bar"></div>
+                  <div class="pc-mock-lines">
+                    <div class="pc-mock-line ml-80"></div>
+                    <div class="pc-mock-line ml-60"></div>
+                  </div>
+                </div>
+              </div> -->
+          </div>
+        <div class="pc-body">
+          <div class="pc-cat">Web Design</div>
+          <div class="pc-title">Analytics Dashboard</div>
+          <div class="pc-desc">Data-rich dashboard with clean visual hierarchy and responsive layout.</div>
+          <div class="pc-footer"><span class="pc-year">2025</span><div class="pc-arrow"><i class="ph ph-arrow-up-right"></i></div></div>
+        </div>
+      </div>
+
+      <div class="project-card p4 med rv" style="transition-delay:.19s">
+        <div class="pc-img"><div class="pc-bg"><img src="./designsystem.png" alt=""></div><div class="pc-mock"><div class="pc-mock-screen"><div class="pc-mock-bar"></div><div class="pc-mock-lines"><div class="pc-mock-line ml-90"></div><div class="pc-mock-line ml-60"></div></div></div></div></div>
+        <div class="pc-body">
+          <div class="pc-cat">UI/UX · Web</div>
+          <div class="pc-title">Scala Tech Interface</div>
+          <div class="pc-desc">Designed accessible web interfaces with user-centred design principles for Scala Technologies.</div>
+          <div class="pc-footer"><span class="pc-year">2024</span><div class="pc-arrow"><i class="ph ph-arrow-up-right"></i></div></div>
+        </div>
+      </div>
+
+      <div class="project-card p5 med rv" style="transition-delay:.24s">
+        <div class="pc-img"><div class="pc-bg"></div><div class="pc-mock"><div class="pc-mock-screen"><div class="pc-mock-bar"></div><div class="pc-mock-lines"><div class="pc-mock-line ml-80"></div><div class="pc-mock-line ml-90"></div></div></div></div></div>
+        <div class="pc-body">
+          <div class="pc-cat">Graphic Design</div>
+          <div class="pc-title">Social Media Visuals</div>
+          <div class="pc-desc">Campaign visual assets — banners, social creatives, and marketing collateral.</div>
+          <div class="pc-footer"><span class="pc-year">2025</span><div class="pc-arrow"><i class="ph ph-arrow-up-right"></i></div></div>
+        </div>
+      </div>
+
+      <div class="project-card p6 sm rv" style="transition-delay:.29s">
+        <div class="pc-img"><div class="pc-bg"></div><div class="pc-mock"><div class="pc-mock-screen"><div class="pc-mock-bar"></div><div class="pc-mock-lines"><div class="pc-mock-line ml-80"></div><div class="pc-mock-line ml-60"></div></div></div></div></div>
+        <div class="pc-body">
+          <div class="pc-cat">Editorial</div>
+          <div class="pc-title">Botanical Publication</div>
+          <div class="pc-desc">Editorial layout and visual direction for botanical science publication.</div>
+          <div class="pc-footer"><span class="pc-year">2024</span><div class="pc-arrow"><i class="ph ph-arrow-up-right"></i></div></div>
+        </div>
+      </div>
+
+      <div class="project-card p7 sm rv" style="transition-delay:.34s">
+        <div class="pc-img"><div class="pc-bg"></div><div class="pc-mock"><div class="pc-mock-screen"><div class="pc-mock-bar"></div><div class="pc-mock-lines"><div class="pc-mock-line ml-60"></div><div class="pc-mock-line ml-80"></div></div></div></div></div>
+        <div class="pc-body">
+          <div class="pc-cat">Design System</div>
+          <div class="pc-title">Component Library</div>
+          <div class="pc-desc">Scalable, reusable UI component library with style guide documentation.</div>
+          <div class="pc-footer"><span class="pc-year">2025</span><div class="pc-arrow"><i class="ph ph-arrow-up-right"></i></div></div>
+        </div>
+      </div>
+
+      <div class="project-card p1 sm rv" style="transition-delay:.39s">
+        <div class="pc-img"><div class="pc-bg"></div><div class="pc-mock"><div class="pc-mock-screen"><div class="pc-mock-bar"></div><div class="pc-mock-lines"><div class="pc-mock-line ml-90"></div><div class="pc-mock-line ml-60"></div></div></div></div></div>
+        <div class="pc-body">
+          <div class="pc-cat">UX Research</div>
+          <div class="pc-title">E-commerce Redesign</div>
+          <div class="pc-desc">Research-led redesign improving checkout conversion and product discoverability.</div>
+          <div class="pc-footer"><span class="pc-year">2024</span><div class="pc-arrow"><i class="ph ph-arrow-up-right"></i></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     EXPERIENCE
+════════════════════════════════════════ -->
+<section id="experience">
+  <div class="container">
+    <div class="exp-header rv">
+      <div class="section-label">Background</div>
+      <h2 class="section-title">Experience &amp; Education</h2>
+    </div>
+    <div class="exp-layout">
+      <!-- Timeline -->
+      <div class="timeline-col rv-l">
+        <div class="tl-col-title">Work History</div>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-year">2025<br>Present</div>
+            <div class="tl-content">
+              <div class="tl-dot"></div>
+              <div class="tl-role">UI/UX Designer</div>
+              <div class="tl-co">Appsha Nepal</div>
+              <div class="tl-desc">End-to-end UI/UX for web and mobile apps — user research, prototyping, design systems, and brand assets using Figma, Photoshop, and Illustrator.</div>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-year">Oct 2024<br>Feb 2025</div>
+            <div class="tl-content">
+              <div class="tl-dot"></div>
+              <div class="tl-role">UI/UX Designer Intern</div>
+              <div class="tl-co">Scala Technologies</div>
+              <div class="tl-desc">Designed user-friendly web and mobile interfaces, built wireframes, interactive Figma prototypes, and contributed to design systems.</div>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-year">2024<br>2025</div>
+            <div class="tl-content">
+              <div class="tl-dot"></div>
+              <div class="tl-role">Senior Writer</div>
+              <div class="tl-co">Thrombsan's Publication Pvt. Ltd.</div>
+              <div class="tl-desc">Authored botanical publications, established editorial guidelines, mentored junior writers, and trained staff on Adobe Illustrator and Google tools.</div>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-year">2019<br>2024</div>
+            <div class="tl-content">
+              <div class="tl-dot"></div>
+              <div class="tl-role">Data Specialist</div>
+              <div class="tl-co">CloudFactory</div>
+              <div class="tl-desc">Data analysis, QA checks, and AI model training through accurate, reliable data annotations across diverse project types.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="edu-col rv-r">
+        <div class="tl-col-title">Academic Background</div>
+        <div class="edu-cards">
+          <div class="edu-card">
+            <div class="edu-icon"><i class="ph ph-graduation-cap"></i></div>
+            <div class="edu-info">
+              <div class="edu-deg">Master of Computer Science</div>
+              <div class="edu-inst">Graduate Programme</div>
+            </div>
+            <div class="edu-meta"><div class="edu-yr">2023</div><div class="edu-grade">GPA 3.35</div></div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-icon"><i class="ph ph-graduation-cap"></i></div>
+            <div class="edu-info">
+              <div class="edu-deg">B.Sc. (Hons) Computing</div>
+              <div class="edu-inst">Undergraduate Programme</div>
+            </div>
+            <div class="edu-meta"><div class="edu-yr">2020</div><div class="edu-grade">GPA 2.80</div></div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-icon"><i class="ph ph-book-open"></i></div>
+            <div class="edu-info">
+              <div class="edu-deg">Higher Secondary Certificate</div>
+              <div class="edu-inst">Golden Gate Int'l College</div>
+            </div>
+            <div class="edu-meta"><div class="edu-yr">2016</div><div class="edu-grade">61.2%</div></div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-icon"><i class="ph ph-book-open"></i></div>
+            <div class="edu-info">
+              <div class="edu-deg">SLC / SEE</div>
+              <div class="edu-inst">Creative Academy, Kirtipur</div>
+            </div>
+            <div class="edu-meta"><div class="edu-yr">2014</div><div class="edu-grade">80%</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     PROCESS
+════════════════════════════════════════ -->
+<section id="process">
+  <div class="container">
+    <div class="process-header rv">
+      <div class="section-label">How I Work</div>
+      <h2 class="section-title">My Design Process</h2>
+    </div>
+    <div class="process-steps">
+      <div class="process-step rv" style="transition-delay:.04s">
+        <div class="ps-num">01</div>
+        <div class="ps-icon"><i class="ph ph-magnifying-glass"></i></div>
+        <div class="ps-title">Discover</div>
+        <div class="ps-desc">Deep-dive into user needs, competitor landscape, and project goals through research, interviews, and analysis.</div>
+      </div>
+      <div class="process-step rv" style="transition-delay:.1s">
+        <div class="ps-num">02</div>
+        <div class="ps-icon"><i class="ph ph-pencil-simple-line"></i></div>
+        <div class="ps-title">Define</div>
+        <div class="ps-desc">Synthesise research into user personas, journeys, and clear design briefs that ground every decision.</div>
+      </div>
+      <div class="process-step rv" style="transition-delay:.16s">
+        <div class="ps-num">03</div>
+        <div class="ps-icon"><i class="ph ph-shapes"></i></div>
+        <div class="ps-title">Design</div>
+        <div class="ps-desc">Iterate rapidly from low-fidelity wireframes to high-fidelity mockups, building complete design systems.</div>
+      </div>
+      <div class="process-step rv" style="transition-delay:.22s">
+        <div class="ps-num">04</div>
+        <div class="ps-icon"><i class="ph ph-rocket-launch"></i></div>
+        <div class="ps-title">Deliver</div>
+        <div class="ps-desc">Handoff pixel-perfect assets, collaborate closely with developers, and iterate based on real-world feedback.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════
+     CONTACT
+════════════════════════════════════════ -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-wrap rv">
+      <div class="contact-left">
+        <div class="cl-eyebrow">Let's Connect</div>
+        <h2 class="cl-title">Have a project in mind?</h2>
+        <p class="cl-sub">I'm currently open to freelance projects, collaborations, and full-time opportunities. Let's build something great together.</p>
+
+        <div class="cl-links">
+          <a class="cl-link" href="mailto:abhidangol11@gmail.com">
+            <div class="cl-ico"><i class="ph ph-envelope-simple"></i></div>
+            <div><div class="cl-lbl">Email</div><div class="cl-val">abhidangol11@gmail.com</div></div>
+          </a>
+          <a class="cl-link" href="tel:9860082254">
+            <div class="cl-ico"><i class="ph ph-phone"></i></div>
+            <div><div class="cl-lbl">Phone</div><div class="cl-val">**********</div></div>
+          </a>
+          <div class="cl-link" style="cursor:default">
+            <div class="cl-ico"><i class="ph ph-map-pin"></i></div>
+            <div><div class="cl-lbl">Location</div><div class="cl-val">Kirtipur, Kathmandu, Nepal</div></div>
+          </div>
+        </div>
+
+        <div class="cl-avail">
+          <span class="avail-dot"></span>
+          Currently Available for Work
+        </div>
+      </div>
+
+      <div class="contact-right">
+        <div class="form-title">Send a Message</div>
+        <form id="contactForm">
+          <div class="form-row">
+            <div class="fg">
+              <label for="from_name">Full Name</label>
+              <input type="text" id="from_name" name="from_name" placeholder="Your name" required>
+            </div>
+            <div class="fg">
+              <label for="reply_to">Email Address</label>
+              <input type="email" id="reply_to" name="reply_to" placeholder="your@email.com" required>
+            </div>
+          </div>
+          <div class="fg">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Project inquiry, collaboration..." required>
+          </div>
+          <div class="fg">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me about your project, goals, and timeline..." required></textarea>
+          </div>
+          <div class="form-footer">
+            <button type="submit" class="btn-submit" id="sb">
+              <span id="sbl">Send Message</span>
+              <i class="ph ph-paper-plane-tilt"></i>
+            </button>
+            <span id="fmsg"></span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span class="ft-copy">© 2025 Abhishek Dangol. All rights reserved.</span>
+  <span class="ft-built">Designed &amp; built with care</span>
+  <a href="#hero" class="ft-back"><i class="ph ph-arrow-up"></i> Back to top</a>
+</footer>
+
+<!-- ════════════════════════════════════════
+     SCRIPTS
+════════════════════════════════════════ -->
+<script src="script.js"></script>
+</body>
+</html>
